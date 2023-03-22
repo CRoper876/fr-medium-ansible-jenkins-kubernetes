@@ -12,7 +12,7 @@ before_script:
   - rm -rf .terraform
   - terraform --version
   - terraform init -reconfigure
-  - terraform select workspace dev
+  - terraform workspace select dev
 
 stages:
   - format
